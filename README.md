@@ -1,4 +1,4 @@
-### ENCODER 8TO3 DATAFLOW Modelling
+# ENCODER 8TO3 DATAFLOW Modelling
 
 **AIM:**
 
@@ -34,23 +34,37 @@ Logical circuit of the above expressions is given below:
 
 Figure 02  Encoder 8 * 3
 
-**Procedure**
+### Procedure
 
-/* write all the steps invloved */
+1.Type the program in Quartus software.
+2.Compile and run the program.
+3.Generate the RTL schematic and save the logic diagram.
+4.Create nodes for inputs and outputs to generate the timing diagram.
+5.For different input combinations generate the timing diagram.
 
-**PROGRAM**
+### PROGRAM
 
-/* Program for Encoder 8 To 3 in Dataflow Modelling and verify its truth table in quartus using Verilog programming. 
+/* Program for Encoder 8 To 3 in Dataflow Modelling and verify its truth table in quartus using Verilog programming.*/
+### Developed by: AARON H. 
+### RegisterNumber: 212223040001
+```
+module ENCODER8TO3(a0,a1,a2,d0,d1,d2,d3,d4,d5,d6,d7);
+input d0,d1,d2,d3,d4,d5,d6,d7;
+output a0,a1,a2;
+//add logic here using dataflow modelling
+assign a0 = d1 | d3 | d5 | d7;
+assign a1 = d2 | d3 | d6 | d7;
+assign a2 = d4 | d5 | d6 | d7;
+endmodule
+```
 
-Developed by: RegisterNumber:
-*/
+### RTL LOGIC FOR Encoder 8 To 3 in Dataflow Modelling
+![WhatsApp Image 2024-03-30 at 10 28 12](https://github.com/aaron-h-2k5/ENCODER8TO3DATAFLOW/assets/144250957/1f86cb4f-7ab4-4efa-9712-c8b92e71b887)
 
-**RTL LOGIC FOR Encoder 8 To 3 in Dataflow Modelling**
+## TIMING DIGRAMS FOR Encoder 8 To 3 in Dataflow Modelling
+![WhatsApp Image 2024-03-30 at 10 28 11](https://github.com/aaron-h-2k5/ENCODER8TO3DATAFLOW/assets/144250957/2e9dd973-d044-49c4-969a-70902311abaf)
 
-**TIMING DIGRAMS FOR Encoder 8 To 3 in Dataflow Modelling**
-
-**RESULTS**
-
-
+### RESULTS
+Thus, an 8*3 encoder has been implemented using verilog successfully.
 
 
