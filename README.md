@@ -47,8 +47,8 @@ Figure 02  Encoder 8 * 3
 5.For different input combinations generate the timing diagram.
 
 ### PROGRAM
-#### Developed by: AARON H. 
-#### RegisterNumber: 212223040001
+#### Developed by: Abinaya.A
+#### RegisterNumber: 212223040007
 ```
 module ENCODER8TO3(a0,a1,a2,d0,d1,d2,d3,d4,d5,d6,d7);
 input d0,d1,d2,d3,d4,d5,d6,d7;
